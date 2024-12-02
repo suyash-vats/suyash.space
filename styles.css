@@ -928,6 +928,9 @@ body {
 
 /* Extra small screens (max-width: 480px) */
 @media (max-width: 480px) {
+    .content{
+        margin-top: 3rem;
+    }
     h1 {
         font-size: 1.5rem;
     }
@@ -941,13 +944,15 @@ body {
     }
 
     .sphere {
-        margin-top: 150px;
+        margin-top: 200px;
         margin-bottom:-100px;
 
         width: 100vw; /* Contain sphere entirely */
         height: auto; /* Adjust aspect ratio */
     }
-
+    .skills{
+    margin-top: -20rem;
+    }
     .footer-section {
         flex-direction: column; /* Stack footer elements */
     }
