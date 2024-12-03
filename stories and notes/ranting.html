@@ -418,6 +418,133 @@
     margin-top: 1px; /* Adjusted to ensure no large gap */
 }
 
+/* Responsive Styling */
+@media (max-width: 1200px) {
+    #second {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+    }
+
+    .learn-more {
+        margin-left: 0; /* Center the "Learn More" on smaller screens */
+        text-align: center;
+    }
+
+    .elem .title-container {
+        flex-direction: column; /* Stack h1 and h5 on top of each other */
+        text-align: center;
+    }
+
+    .h1 {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+
+    .elem h5 {
+        font-size: 2.5vw;
+        margin-left: 0;
+    }
+
+    .menu-item {
+        font-size: 2.5rem; /* Reduce menu font size */
+    }
+}
+
+@media (max-width: 768px) {
+    header .title {
+        font-size: 3.5rem;
+        margin-top: 4rem;
+    }
+
+    header .subtitle {
+        font-size: 1.5rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu-item {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+
+    #second {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-toggle span {
+        width: 25px;
+        height: 2px;
+    }
+
+    .footer-section {
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+    .social-links {
+        gap: 16px;
+    }
+
+    .social-link svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 5vw;
+    }
+
+    .menu-item {
+        font-size: 1.5rem;
+    }
+
+    header .title {
+        font-size: 2.5rem;
+    }
+
+    header .subtitle {
+        font-size: 1rem;
+    }
+
+    .learn-more {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .theme-toggle img {
+        height: 40px;
+    }
+
+    .footer-section {
+        padding: 10px;
+    }
+
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-link svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    #second {
+        padding: 10px;
+    }
+}
 
 
     </style>
