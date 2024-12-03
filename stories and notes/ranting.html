@@ -16,7 +16,8 @@
             box-sizing: border-box;
         }
 
-        html, body {
+        html,
+        body {
             width: 100%;
             height: 100%;
             overflow: hidden;
@@ -35,10 +36,12 @@
         #main {
             width: 100%;
             background-color: black;
-            overflow-y: auto; /* Allow scrolling if content exceeds */
-    min-height: 100vh; /* Ensure full height usage */
-   
-            
+            overflow-y: auto;
+            /* Allow scrolling if content exceeds */
+            min-height: 100vh;
+            /* Ensure full height usage */
+
+
         }
 
         #second {
@@ -50,16 +53,17 @@
             margin-left: 10rem;
         }
 
-       
+
         .elem .title-container {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            align-items: center; /* Ensures alignment of h1 and h5 */
+            align-items: center;
+            /* Ensures alignment of h1 and h5 */
         }
 
         .h1 {
-            text-transform:capitalize;
+            text-transform: capitalize;
             font-size: 2vw;
             opacity: .7;
             margin-bottom: 10px;
@@ -68,17 +72,20 @@
         .elem h5 {
             font-size: 1.2vw;
             opacity: .7;
-            margin-left: auto; /* Ensures the h5 is aligned to the right */
+            margin-left: auto;
+            /* Ensures the h5 is aligned to the right */
         }
 
         .elemlast {
             border-bottom: 1px solid #888;
             margin-bottom: 0;
         }
+
         .elem .elemlast {
-    border-bottom: 1px solid #888;
-    margin-bottom: 0; /* Remove extra space after the last element */
-}
+            border-bottom: 1px solid #888;
+            margin-bottom: 0;
+            /* Remove extra space after the last element */
+        }
 
         .elem img {
             opacity: 0;
@@ -95,7 +102,7 @@
             color: #fff;
         }
 
-        .title{
+        .title {
             font-family: 'Playfair Display', serif;
             font-size: 5rem;
             margin-bottom: 1rem;
@@ -123,9 +130,11 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 1.3vw;
-            margin-top: 1rem; /* Adjusts space between h1 and Learn More */
+            margin-top: 1rem;
+            /* Adjusts space between h1 and Learn More */
             transition: transform 0.3s;
-            margin-left: -1021px; /* Move "Learn More" to the left */
+            margin-left: -1021px;
+            /* Move "Learn More" to the left */
         }
 
         .learn-more::after {
@@ -133,31 +142,33 @@
             margin-left: 5px;
             transition: transform 0.3s;
         }
-        .elem {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    padding: 1vw 2vw;
-    padding-right: 0;
-    border-top: 1px solid #888;
-    flex-direction: column;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-}
 
-.elem a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+        .elem {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            padding: 1vw 2vw;
+            padding-right: 0;
+            border-top: 1px solid #888;
+            flex-direction: column;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .elem a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
         :root {
@@ -195,7 +206,7 @@
             background: transparent;
             cursor: pointer;
             z-index: 2100;
-                  }
+        }
 
         .menu-toggle span {
             display: block;
@@ -206,9 +217,17 @@
             transition: 0.4s;
         }
 
-        .menu-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-        .menu-toggle.open span:nth-child(2) { opacity: 0; }
-        .menu-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+        .menu-toggle.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-toggle.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
 
         /* Fullscreen Menu */
         .menu-container {
@@ -227,7 +246,10 @@
             transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
         }
 
-        .menu-container.open { opacity: 1; visibility: visible; }
+        .menu-container.open {
+            opacity: 1;
+            visibility: visible;
+        }
 
         .menu {
             list-style-type: none;
@@ -259,294 +281,315 @@
             margin-right: 2rem;
         }
 
-       
-
-.menu {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-}
-
-.menu-item {
-    font-size: 3rem;
-    font-weight: 600;
-    margin: 2rem 0;
-    cursor: pointer;
-    perspective: 1000px;
-    text-align: center;
-}
-
-.menu-item span {
-    display: inline-block;
-}
 
 
-/* Style the menu-toggle button to stay above the overlay */
-.menu-toggle {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: 2px solid var(--text-color);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 2100; /* Higher z-index to stay above the overlay */
-    transition: transform 0.4s ease-in-out;
-}
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+        }
 
-/* Rotate the lines of the menu-toggle icon to create an "X" when open */
-.menu-toggle.open span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
+        .menu-item {
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 2rem 0;
+            cursor: pointer;
+            perspective: 1000px;
+            text-align: center;
+        }
 
-.menu-toggle.open span:nth-child(2) {
-    opacity: 0; /* Hide the middle line */
-}
-
-.menu-toggle.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Adjust icon color when menu is open */
-.menu-toggle.open span {
-    background-color: var(--accent-color); /* Adjust color for visibility */
-}
-
-.menu-container.open {
-    opacity: 1;
-    visibility: visible;
-}
+        .menu-item span {
+            display: inline-block;
+        }
 
 
-.theme-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-    transition: color 0.3s ease;
-    z-index: 2100;
-}
-.theme-toggle img{
-    height: 50px;
-    top: 20px;
-    margin-right: 2rem;
-  
+        /* Style the menu-toggle button to stay above the overlay */
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: 2px solid var(--text-color);
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2100;
+            /* Higher z-index to stay above the overlay */
+            transition: transform 0.4s ease-in-out;
+        }
 
-}
+        /* Rotate the lines of the menu-toggle icon to create an "X" when open */
+        .menu-toggle.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
 
+        .menu-toggle.open span:nth-child(2) {
+            opacity: 0;
+            /* Hide the middle line */
+        }
 
+        .menu-toggle.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
 
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    margin-top: 80px;
-  
-    padding: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
+        /* Adjust icon color when menu is open */
+        .menu-toggle.open span {
+            background-color: var(--accent-color);
+            /* Adjust color for visibility */
+        }
 
-.social-links {
-    display: flex;
-    gap: 24px; /* Larger gap for better spacing */
-    justify-content: center; /* Centers the social links horizontally */
-    margin-bottom: 16px; /* Space between social links and copyright */
-}
-
-.social-link {
-    color: #fff;
-    text-decoration: none;
-    transition: transform 0.3s, color 0.3s; /* Smooth transformation */
-}
-
-.social-link:hover {
-    color: #5b5959; /* Accent color on hover */
-    transform: translateY(-5px); /* Slight hover effect */
-}
-
-.social-link svg {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s; /* Animate the SVG icons */
-}
-
-.social-link:hover svg {
-    transform: translateX(-5px); /* Slight hover effect for icons */
-}
-
-.copyright {
-    color: #bbb;
-    font-size: 0.875rem;
-    text-align: center;
-}
-
-.copyright p {
-    margin: 0;
-    margin-bottom: 20px;
-}
+        .menu-container.open {
+            opacity: 1;
+            visibility: visible;
+        }
 
 
-#second {
-    color: #fff;
-    padding-top: 20px;
-    background-color: black;
-    width: 80%;
-    height: auto; /* Allow content to determine the height */
-    margin-left: 10rem;
-}
+        .theme-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+            transition: color 0.3s ease;
+            z-index: 2100;
+        }
 
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Ensures it stays at the bottom */
-    align-items: center;
-    margin-top: 20px; /* Adjusted margin */
-    padding: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.extra {
-    margin-top: 1px; /* Adjusted to ensure no large gap */
-}
-
-/* Responsive Styling */
-@media (max-width: 1200px) {
-    #second {
-        width: 90%;
-        margin-left: 5%;
-        height: auto;
-    }
-
-    .learn-more {
-        margin-left: 0; /* Center the "Learn More" on smaller screens */
-        text-align: center;
-    }
-
-    .elem .title-container {
-        flex-direction: column; /* Stack h1 and h5 on top of each other */
-        text-align: center;
-    }
-
-    .h1 {
-        font-size: 4vw; /* Adjust font size for smaller screens */
-    }
-
-    .elem h5 {
-        font-size: 2.5vw;
-        margin-left: 0;
-    }
-
-    .menu-item {
-        font-size: 2.5rem; /* Reduce menu font size */
-    }
-}
-
-@media (max-width: 768px) {
-    header .title {
-        font-size: 3.5rem;
-        margin-top: 4rem;
-    }
-
-    header .subtitle {
-        font-size: 1.5rem;
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    .menu-item {
-        font-size: 2rem;
-        margin: 1.5rem 0;
-    }
-
-    #second {
-        margin-left: 0;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .menu-toggle {
-        width: 40px;
-        height: 40px;
-    }
-
-    .menu-toggle span {
-        width: 25px;
-        height: 2px;
-    }
-
-    .footer-section {
-        margin-top: 40px;
-        padding: 15px;
-    }
-
-    .social-links {
-        gap: 16px;
-    }
-
-    .social-link svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .copyright {
-        font-size: 0.75rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .h1 {
-        font-size: 5vw;
-    }
-
-    .menu-item {
-        font-size: 1.5rem;
-    }
-
-    header .title {
-        font-size: 2.5rem;
-    }
-
-    header .subtitle {
-        font-size: 1rem;
-    }
-
-    .learn-more {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .theme-toggle img {
-        height: 40px;
-    }
-
-    .footer-section {
-        padding: 10px;
-    }
-
-    .social-links {
-        gap: 12px;
-    }
-
-    .social-link svg {
-        width: 18px;
-        height: 18px;
-    }
-
-    #second {
-        padding: 10px;
-    }
-}
+        .theme-toggle img {
+            height: 50px;
+            top: 20px;
+            margin-right: 2rem;
 
 
+        }
+
+
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* Centers content horizontally */
+            align-items: center;
+            /* Centers content vertically */
+            margin-top: 80px;
+
+            padding: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+        }
+
+        .social-links {
+            display: flex;
+            gap: 24px;
+            /* Larger gap for better spacing */
+            justify-content: center;
+            /* Centers the social links horizontally */
+            margin-bottom: 16px;
+            /* Space between social links and copyright */
+        }
+
+        .social-link {
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+            /* Smooth transformation */
+        }
+
+        .social-link:hover {
+            color: #5b5959;
+            /* Accent color on hover */
+            transform: translateY(-5px);
+            /* Slight hover effect */
+        }
+
+        .social-link svg {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s;
+            /* Animate the SVG icons */
+        }
+
+        .social-link:hover svg {
+            transform: translateX(-5px);
+            /* Slight hover effect for icons */
+        }
+
+        .copyright {
+            color: #bbb;
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        .copyright p {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+
+        #second {
+            color: #fff;
+            padding-top: 20px;
+            background-color: black;
+            width: 80%;
+            height: auto;
+            /* Allow content to determine the height */
+            margin-left: 10rem;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            /* Ensures it stays at the bottom */
+            align-items: center;
+            margin-top: 20px;
+            /* Adjusted margin */
+            padding: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .extra {
+            margin-top: 1px;
+            /* Adjusted to ensure no large gap */
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 1200px) {
+            #second {
+                width: 90%;
+                margin-left: 5%;
+                height: auto;
+            }
+
+            .learn-more {
+                margin-left: 0;
+                /* Center the "Learn More" on smaller screens */
+                text-align: center;
+            }
+
+            .elem .title-container {
+                flex-direction: column;
+                /* Stack h1 and h5 on top of each other */
+                text-align: center;
+            }
+
+            .h1 {
+                font-size: 4vw;
+                /* Adjust font size for smaller screens */
+            }
+
+            .elem h5 {
+                font-size: 2.5vw;
+                margin-left: 0;
+            }
+
+            .menu-item {
+                font-size: 2.5rem;
+                /* Reduce menu font size */
+            }
+        }
+
+        @media (max-width: 768px) {
+            header .title {
+                font-size: 3.5rem;
+                margin-top: 4rem;
+            }
+
+            header .subtitle {
+                font-size: 1.5rem;
+                max-width: 90%;
+                margin: 0 auto;
+            }
+
+            .menu-item {
+                font-size: 2rem;
+                margin: 1.5rem 0;
+            }
+
+            #second {
+                margin-left: 0;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .menu-toggle {
+                width: 40px;
+                height: 40px;
+            }
+
+            .menu-toggle span {
+                width: 25px;
+                height: 2px;
+            }
+
+            .footer-section {
+                margin-top: 40px;
+                padding: 15px;
+            }
+
+            .social-links {
+                gap: 16px;
+            }
+
+            .social-link svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            .copyright {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .h1 {
+                font-size: 5vw;
+            }
+
+            .menu-item {
+                font-size: 1.5rem;
+            }
+
+            header .title {
+                font-size: 2.5rem;
+            }
+
+            header .subtitle {
+                font-size: 1rem;
+            }
+
+            .learn-more {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .theme-toggle img {
+                height: 40px;
+            }
+
+            .footer-section {
+                padding: 10px;
+            }
+
+            .social-links {
+                gap: 12px;
+            }
+
+            .social-link svg {
+                width: 18px;
+                height: 18px;
+            }
+
+            #second {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -554,27 +597,35 @@
     <button class="theme-toggle" aria-label="Toggle Theme">
         <img src="../img/original-e4b1d2b51550688f5fe2c07ffe2790fe.png" alt="Theme Toggle Icon">
     </button>
-    
+
     <!-- Menu Toggle Button on the Right -->
     <button class="menu-toggle" aria-label="Toggle Menu">
         <span></span>
         <span></span>
         <span></span>
     </button>
-    
+
     <!-- Fullscreen Menu -->
     <div class="menu-container">
         <ul class="menu">
-            <a href="../index.html#home" style="color: #fff;"><li class="menu-item">Home </li></a>
-        <a href="../index.html#about" style="color: #fff;"><li class="menu-item">About </li></a>
-        <a href="../index.html#advantages" style="color: #fff;"><li class="menu-item">Projects </li></a>
-        <a href="../index.html#footer" style="color: #fff;"><li class="menu-item">Contact </li></a>
+            <a href="../index.html#home" style="color: #fff;">
+                <li class="menu-item">Home </li>
+            </a>
+            <a href="../index.html#about" style="color: #fff;">
+                <li class="menu-item">About </li>
+            </a>
+            <a href="../index.html#advantages" style="color: #fff;">
+                <li class="menu-item">Projects </li>
+            </a>
+            <a href="../index.html#footer" style="color: #fff;">
+                <li class="menu-item">Contact </li>
+            </a>
         </ul>
     </div>
     <div id="main">
-        
-   
-    
+
+
+
 
         <div class="container">
             <header>
@@ -584,6 +635,15 @@
         </div>
         <div id="second">
 
+            <a href="../ranting/wish.html" class="elem">
+                <img src="../img/wish.jpg" alt="">
+                <div class="title-container">
+                    <h1 class="h1">Reality's Edge</h1>
+                    <h5>Dec 04, 2024</h5>
+                </div>
+                <span class="learn-more">Learn More</span>
+            </a>
+
             <a href="../ranting/latter.html" class="elem">
                 <img src="../img/letter.jpg" alt="">
                 <div class="title-container">
@@ -592,6 +652,7 @@
                 </div>
                 <span class="learn-more">Learn More</span>
             </a>
+
             <a href="../ranting/watching.html" class="elem">
                 <img src="../img/watching.jpg" alt="">
                 <div class="title-container">
@@ -609,6 +670,7 @@
                 </div>
                 <span class="learn-more">Learn More</span>
             </a>
+
             <a href="../ranting/soulmate.html" class="elem">
                 <img src="../img/soulmate.jpg" alt="">
                 <div class="title-container">
@@ -617,6 +679,7 @@
                 </div>
                 <span class="learn-more">Learn More</span>
             </a>
+
             <a href="../ranting/awake.html" class="elem">
                 <img src="../img/awake.jpg" alt="">
                 <div class="title-container">
@@ -625,6 +688,7 @@
                 </div>
                 <span class="learn-more">Learn More</span>
             </a>
+
             <a href="../ranting/high-there.html" class="elem elemlast">
                 <img src="../img/site logo.jpg" alt="">
                 <div class="title-container">
@@ -637,34 +701,39 @@
             <div class="footer-section">
                 <div class="social-links">
                     <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-                            <path d="M9 18c-4.51 2-5-2-7-2"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
                         </svg>
                     </a>
                     <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                         </svg>
                     </a>
                     <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="20" height="16" x="2" y="4" rx="2"/>
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                         </svg>
                     </a>
                 </div>
                 <div class="copyright">
                     <p>&copy; 2024 Suyash vats . All Rights Reserved.</p>
                 </div>
-        </div>
-        
-        <div class="extra" style="margin: -10rem;"></div>
-        
-        
-    </div>
+            </div>
 
-   
+            <div class="extra" style="margin: -10rem;"></div>
+
+
+        </div>
+
+
     </div>
 
 
@@ -744,118 +813,118 @@
         // **************************/
 
 
-        
 
-  const menuToggle = document.querySelector('.menu-toggle');
-const menuContainer = document.querySelector('.menu-container');
-const menuItems = document.querySelectorAll('.menu-item');
-const langSwitch = document.querySelector('.lang-switch');
 
-let isMenuOpen = false;
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuContainer = document.querySelector('.menu-container');
+        const menuItems = document.querySelectorAll('.menu-item');
+        const langSwitch = document.querySelector('.lang-switch');
 
-function splitLetters(element) {
-    const text = element.textContent;
-    element.textContent = '';
-    text.split('').forEach(char => {
-        const span = document.createElement('span');
-        span.textContent = char;
-        element.appendChild(span);
-    });
-}
+        let isMenuOpen = false;
 
-menuItems.forEach(splitLetters);
-
-function toggleMenu() {
-    isMenuOpen = !isMenuOpen;
-    
-    if (isMenuOpen) {
-        gsap.to(menuContainer, {
-            opacity: 1,
-            visibility: 'visible',
-            duration: 0.5
-        });
-
-        gsap.from(menuItems, {
-            y: 50,
-            opacity: 0,
-            rotationX: -90,
-            stagger: 0.1,
-            duration: 0.8,
-            ease: 'back.out(1.7)'
-        });
-
-        menuItems.forEach(item => {
-            gsap.from(item.children, {
-                opacity: 0,
-                y: 20,
-                rotationY: 90,
-                stagger: 0.02,
-                duration: 0.6,
-                ease: 'power2.out'
+        function splitLetters(element) {
+            const text = element.textContent;
+            element.textContent = '';
+            text.split('').forEach(char => {
+                const span = document.createElement('span');
+                span.textContent = char;
+                element.appendChild(span);
             });
-        });
-    } else {
-        gsap.to(menuContainer, {
-            opacity: 0,
-            duration: 0.5,
-            onComplete: () => {
-                menuContainer.style.visibility = 'hidden';
-            }
-        });
-    }
-
-    gsap.to(menuToggle.children, {
-        rotation: isMenuOpen ? 45 : 0,
-        y: isMenuOpen ? 8 : 0,
-        stagger: 0.1,
-        duration: 0.3
-    });
-}
-
-menuToggle.addEventListener('click', toggleMenu);
-
-menuItems.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        gsap.to(item.children, {
-            x: -10,
-            rotationY: -360,
-            color: '#808080',
-            stagger: 0.02,
-            duration: 0.4
-        });
-    });
-
-    item.addEventListener('mouseleave', () => {
-        gsap.to(item.children, {
-            x: 0,
-            rotationY: 0,
-            color: '#ffffff',
-            stagger: 0.02,
-            duration: 0.4
-        });
-    });
-
-    // Add click event to close menu
-    item.addEventListener('click', () => {
-        if (isMenuOpen) {
-            toggleMenu();  // Close menu after clicking an item
         }
-    });
-});
 
-langSwitch.addEventListener('click', () => {
-    gsap.to(langSwitch, {
-        rotation: 360,
-        scale: 1.2,
-        duration: 0.5,
-        onComplete: () => {
-            gsap.to(langSwitch, {
-                scale: 1,
+        menuItems.forEach(splitLetters);
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+
+            if (isMenuOpen) {
+                gsap.to(menuContainer, {
+                    opacity: 1,
+                    visibility: 'visible',
+                    duration: 0.5
+                });
+
+                gsap.from(menuItems, {
+                    y: 50,
+                    opacity: 0,
+                    rotationX: -90,
+                    stagger: 0.1,
+                    duration: 0.8,
+                    ease: 'back.out(1.7)'
+                });
+
+                menuItems.forEach(item => {
+                    gsap.from(item.children, {
+                        opacity: 0,
+                        y: 20,
+                        rotationY: 90,
+                        stagger: 0.02,
+                        duration: 0.6,
+                        ease: 'power2.out'
+                    });
+                });
+            } else {
+                gsap.to(menuContainer, {
+                    opacity: 0,
+                    duration: 0.5,
+                    onComplete: () => {
+                        menuContainer.style.visibility = 'hidden';
+                    }
+                });
+            }
+
+            gsap.to(menuToggle.children, {
+                rotation: isMenuOpen ? 45 : 0,
+                y: isMenuOpen ? 8 : 0,
+                stagger: 0.1,
                 duration: 0.3
             });
         }
-    });
-});
+
+        menuToggle.addEventListener('click', toggleMenu);
+
+        menuItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                gsap.to(item.children, {
+                    x: -10,
+                    rotationY: -360,
+                    color: '#808080',
+                    stagger: 0.02,
+                    duration: 0.4
+                });
+            });
+
+            item.addEventListener('mouseleave', () => {
+                gsap.to(item.children, {
+                    x: 0,
+                    rotationY: 0,
+                    color: '#ffffff',
+                    stagger: 0.02,
+                    duration: 0.4
+                });
+            });
+
+            // Add click event to close menu
+            item.addEventListener('click', () => {
+                if (isMenuOpen) {
+                    toggleMenu();  // Close menu after clicking an item
+                }
+            });
+        });
+
+        langSwitch.addEventListener('click', () => {
+            gsap.to(langSwitch, {
+                rotation: 360,
+                scale: 1.2,
+                duration: 0.5,
+                onComplete: () => {
+                    gsap.to(langSwitch, {
+                        scale: 1,
+                        duration: 0.3
+                    });
+                }
+            });
+        });
 
 
     </script>
