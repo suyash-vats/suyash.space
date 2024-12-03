@@ -350,3 +350,21 @@ body {
     padding-left: 20px;
     
 }
+
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 5vw;
+    }
+
+    .menu-item {
+        font-size: 1.5rem;
+    }
+
+
+    .theme-toggle img {
+        height: 40px;
+    }
+
+
+}
