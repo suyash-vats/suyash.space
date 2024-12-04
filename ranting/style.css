@@ -163,7 +163,7 @@ body {
 
         /* Menu Toggle Button */
         .menu-toggle {
-            position: fixed;
+        
             top: 20px;
             left: 20px;
             width: 50px;
@@ -222,7 +222,7 @@ body {
 
         /* Theme Toggle */
         .theme-toggle {
-            position: fixed;
+            
             top: 10px;
             right: 10px;
             background: none;
@@ -365,6 +365,34 @@ body {
     .theme-toggle img {
         height: 40px;
     }
+    .menu-toggle {
+        position: relative;
+        top: -40px;
+        margin-right: 300px; /* Add margin for spacing */
+        width: 35px; /* Further reduce width */
+        height: 35px; /* Further reduce height */
+        border-width: 1px; /* Further reduce border thickness */
+    }
 
+    
+.theme-toggle {
+    position: relative;
+    top: 1px;
+    margin-left: 300px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+    z-index: 2100;
+}
+.containers {
+   
+
+    margin-top: 2rem;
+    width: 100%;
+}
 
 }
+
